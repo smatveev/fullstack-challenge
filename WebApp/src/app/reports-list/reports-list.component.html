@@ -1,0 +1,21 @@
+<div class="col-md-12">
+    <div class="row card-body border rounded mb-3 mt-3 shadow-sm" *ngFor="let r of service.list">
+        <div class="col-md-5">
+            <ul class="list-unstyled">
+                <li>Id: {{r.reportId}}</li>
+                <li>State: {{r.state}}</li>
+                <li><a href=#>Details</a></li>
+            </ul>
+        </div>
+        <div class="col-md-5">
+            <ul class="list-unstyled">
+                <li>Type: {{r.reportType}}</li>
+                <li>Message: {{r.message}}</li>
+            </ul>
+        </div>
+        <div class="col-md-2 mx-auto gap-2 d-grid">
+            <button class="btn btn-secondary" type="button" (click)="onBlock(r.reportId)">Block</button>
+            <button class="btn btn-secondary" type="button" (click)="onResolve(r.reportId)">Resolve</button>        
+        </div>
+    </div>
+</div>
