@@ -1,6 +1,8 @@
 # fullstack-challenge
 .net5 webapi + ef + sqlexpress + angular
 
+![alt text](https://github.com/smatveev/fullstack-challenge/raw/main/screenshot%201.png?raw=true)
+
 # Environment:
 
 - .NET 5
